@@ -20,7 +20,9 @@ export default class NotificationsViewer extends Component {
     return (
       <section className="mt-3 mb-2">
         <div className="notifications">
-          {this.state.count != -1 ? `${this.state.count} Notifications Awaiting!` : `Loading...`}
+          {this.state.count != -1
+            ? `${this.state.count} Notifications Awaiting!`
+            : `Loading...`}
         </div>
       </section>
     );
